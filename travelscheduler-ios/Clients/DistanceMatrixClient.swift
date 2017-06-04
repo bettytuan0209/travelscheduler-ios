@@ -39,8 +39,9 @@ class DistanceMatrixClient: GoogleAPIBaseClient {
             if (response.statusCode != 200) {
                 completion("Status code: \(response.statusCode)")
             } else {
-                let json = try! JSONSerialization.jsonObject(with: data, options: [])
-                completion("\(json)")
+//                let json = try! JSONSerialization.data(withJSONObject: data, options: [])
+                let jsonString = String(data: data, encoding: String.Encoding.utf8)
+                completion(jsonString!)
             }
         }
     }
