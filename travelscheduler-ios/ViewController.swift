@@ -18,8 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let distanceMatrixClient = DistanceMatrixClient()
-        let locations = ["GoldenGateBridge", "PalaceofFineArts", "CaliforniaAcademyofSciences"]
-//        let locations = ["Washington,DC","Boston,MA"]
+        let locations = ["Golden Gate Bridge", "Palace of Fine Arts", "California Academy of Sciences"]
+        infoTextView.text = locations.joined(separator: "\n")
         distanceMatrixClient.getDistanceMatrix(locations: locations) { result in
             self.resultsTextView.text = result.removingPercentEncoding
         }
