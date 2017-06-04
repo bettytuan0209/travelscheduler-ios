@@ -15,6 +15,9 @@
 		E0A1AA5E1EE3C57C00DF2371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A1AA5C1EE3C57C00DF2371 /* LaunchScreen.storyboard */; };
 		E0A1AA691EE3C57C00DF2371 /* travelscheduler_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A1AA681EE3C57C00DF2371 /* travelscheduler_iosTests.swift */; };
 		E0A1AA741EE3C57C00DF2371 /* travelscheduler_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A1AA731EE3C57C00DF2371 /* travelscheduler_iosUITests.swift */; };
+		E0A1AA881EE3D98700DF2371 /* DistanceMatrixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A1AA861EE3D98700DF2371 /* DistanceMatrixClient.swift */; };
+		E0A1AA891EE3D98700DF2371 /* NetworkRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A1AA871EE3D98700DF2371 /* NetworkRequestClient.swift */; };
+		E0A1AA8D1EE3E81700DF2371 /* GoogleAPIBaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A1AA8C1EE3E81700DF2371 /* GoogleAPIBaseClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E0A1AA6F1EE3C57C00DF2371 /* travelscheduler-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "travelscheduler-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A1AA731EE3C57C00DF2371 /* travelscheduler_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travelscheduler_iosUITests.swift; sourceTree = "<group>"; };
 		E0A1AA751EE3C57C00DF2371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0A1AA861EE3D98700DF2371 /* DistanceMatrixClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DistanceMatrixClient.swift; path = Clients/DistanceMatrixClient.swift; sourceTree = "<group>"; };
+		E0A1AA871EE3D98700DF2371 /* NetworkRequestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequestClient.swift; path = Clients/NetworkRequestClient.swift; sourceTree = "<group>"; };
+		E0A1AA8C1EE3E81700DF2371 /* GoogleAPIBaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleAPIBaseClient.swift; path = Clients/GoogleAPIBaseClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		E0A1AA4F1EE3C57B00DF2371 /* travelscheduler-ios */ = {
 			isa = PBXGroup;
 			children = (
+				E0A1AA851EE3D95300DF2371 /* Clients */,
 				E0A1AA501EE3C57C00DF2371 /* AppDelegate.swift */,
 				E0A1AA521EE3C57C00DF2371 /* ViewController.swift */,
 				E0A1AA541EE3C57C00DF2371 /* Main.storyboard */,
@@ -126,6 +133,16 @@
 				E0A1AA751EE3C57C00DF2371 /* Info.plist */,
 			);
 			path = "travelscheduler-iosUITests";
+			sourceTree = "<group>";
+		};
+		E0A1AA851EE3D95300DF2371 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				E0A1AA8C1EE3E81700DF2371 /* GoogleAPIBaseClient.swift */,
+				E0A1AA861EE3D98700DF2371 /* DistanceMatrixClient.swift */,
+				E0A1AA871EE3D98700DF2371 /* NetworkRequestClient.swift */,
+			);
+			name = Clients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A1AA881EE3D98700DF2371 /* DistanceMatrixClient.swift in Sources */,
 				E0A1AA531EE3C57C00DF2371 /* ViewController.swift in Sources */,
 				E0A1AA511EE3C57C00DF2371 /* AppDelegate.swift in Sources */,
+				E0A1AA8D1EE3E81700DF2371 /* GoogleAPIBaseClient.swift in Sources */,
 				E0A1AA591EE3C57C00DF2371 /* travelscheduler_ios.xcdatamodeld in Sources */,
+				E0A1AA891EE3D98700DF2371 /* NetworkRequestClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

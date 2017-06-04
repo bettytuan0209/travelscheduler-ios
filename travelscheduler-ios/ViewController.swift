@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var infoTextView: UITextView!
+    @IBOutlet weak var resultsTextView: UITextView!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let distanceMatrixClient = DistanceMatrixClient()
+        let locations = ["GoldenGateBridge", "PalaceofFineArts", "CaliforniaAcademyofSciences"]
+//        let locations = ["Washington,DC","Boston,MA"]
+        distanceMatrixClient.getDistanceMatrix(locations: locations) { result in
+            self.resultsTextView.text = result.removingPercentEncoding
+        }
+
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
