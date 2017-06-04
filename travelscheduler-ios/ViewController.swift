@@ -22,7 +22,11 @@ class ViewController: UIViewController {
         distanceMatrixClient.getDistanceMatrix(locations: locations) { result in
             self.resultsTextView.text = result
         }
-
     }
+
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//        infoTextView.setContentOffset(CGPoint.zero, animated: false)
+//    }
 }
 

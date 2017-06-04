@@ -18,6 +18,8 @@
 		E0A1AA881EE3D98700DF2371 /* DistanceMatrixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A1AA861EE3D98700DF2371 /* DistanceMatrixClient.swift */; };
 		E0A1AA891EE3D98700DF2371 /* NetworkRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A1AA871EE3D98700DF2371 /* NetworkRequestClient.swift */; };
 		E0A1AA8D1EE3E81700DF2371 /* GoogleAPIBaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A1AA8C1EE3E81700DF2371 /* GoogleAPIBaseClient.swift */; };
+		E0A1AA8F1EE4803500DF2371 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A1AA8E1EE4803500DF2371 /* MapViewController.swift */; };
+		E2DF57AB4B756C5AADD8F281 /* libPods-travelscheduler-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C92139A443A6B4F31ABA644 /* libPods-travelscheduler-ios.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C92139A443A6B4F31ABA644 /* libPods-travelscheduler-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-travelscheduler-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D55D95FE6720E69131267C /* Pods-travelscheduler-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travelscheduler-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-travelscheduler-ios/Pods-travelscheduler-ios.release.xcconfig"; sourceTree = "<group>"; };
+		C893986CBB5521D17610239E /* Pods-travelscheduler-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travelscheduler-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travelscheduler-ios/Pods-travelscheduler-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		E0A1AA4D1EE3C57B00DF2371 /* travelscheduler-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "travelscheduler-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A1AA501EE3C57C00DF2371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0A1AA521EE3C57C00DF2371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		E0A1AA861EE3D98700DF2371 /* DistanceMatrixClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DistanceMatrixClient.swift; path = Clients/DistanceMatrixClient.swift; sourceTree = "<group>"; };
 		E0A1AA871EE3D98700DF2371 /* NetworkRequestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequestClient.swift; path = Clients/NetworkRequestClient.swift; sourceTree = "<group>"; };
 		E0A1AA8C1EE3E81700DF2371 /* GoogleAPIBaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleAPIBaseClient.swift; path = Clients/GoogleAPIBaseClient.swift; sourceTree = "<group>"; };
+		E0A1AA8E1EE4803500DF2371 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2DF57AB4B756C5AADD8F281 /* libPods-travelscheduler-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D874E7F678AD14E606A0E806 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C893986CBB5521D17610239E /* Pods-travelscheduler-ios.debug.xcconfig */,
+				B3D55D95FE6720E69131267C /* Pods-travelscheduler-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E0A1AA441EE3C57B00DF2371 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +105,8 @@
 				E0A1AA671EE3C57C00DF2371 /* travelscheduler-iosTests */,
 				E0A1AA721EE3C57C00DF2371 /* travelscheduler-iosUITests */,
 				E0A1AA4E1EE3C57B00DF2371 /* Products */,
+				D874E7F678AD14E606A0E806 /* Pods */,
+				E8F19C8D219E1C46F260143D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +131,7 @@
 				E0A1AA5C1EE3C57C00DF2371 /* LaunchScreen.storyboard */,
 				E0A1AA5F1EE3C57C00DF2371 /* Info.plist */,
 				E0A1AA571EE3C57C00DF2371 /* travelscheduler_ios.xcdatamodeld */,
+				E0A1AA8E1EE4803500DF2371 /* MapViewController.swift */,
 			);
 			path = "travelscheduler-ios";
 			sourceTree = "<group>";
@@ -145,6 +164,14 @@
 			name = Clients;
 			sourceTree = "<group>";
 		};
+		E8F19C8D219E1C46F260143D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C92139A443A6B4F31ABA644 /* libPods-travelscheduler-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0A1AA781EE3C57C00DF2371 /* Build configuration list for PBXNativeTarget "travelscheduler-ios" */;
 			buildPhases = (
+				E26918EC03983E0146C97703 /* [CP] Check Pods Manifest.lock */,
 				E0A1AA491EE3C57B00DF2371 /* Sources */,
 				E0A1AA4A1EE3C57B00DF2371 /* Frameworks */,
 				E0A1AA4B1EE3C57B00DF2371 /* Resources */,
+				A08AC5C62EEA985E06985AA4 /* [CP] Embed Pods Frameworks */,
+				2798A9EDE112EC41CFB7F798 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +307,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2798A9EDE112EC41CFB7F798 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travelscheduler-ios/Pods-travelscheduler-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A08AC5C62EEA985E06985AA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travelscheduler-ios/Pods-travelscheduler-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E26918EC03983E0146C97703 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0A1AA491EE3C57B00DF2371 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -288,6 +366,7 @@
 				E0A1AA8D1EE3E81700DF2371 /* GoogleAPIBaseClient.swift in Sources */,
 				E0A1AA591EE3C57C00DF2371 /* travelscheduler_ios.xcdatamodeld in Sources */,
 				E0A1AA891EE3D98700DF2371 /* NetworkRequestClient.swift in Sources */,
+				E0A1AA8F1EE4803500DF2371 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +514,7 @@
 		};
 		E0A1AA791EE3C57C00DF2371 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C893986CBB5521D17610239E /* Pods-travelscheduler-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MUDQGGB9EX;
@@ -448,6 +528,7 @@
 		};
 		E0A1AA7A1EE3C57C00DF2371 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D55D95FE6720E69131267C /* Pods-travelscheduler-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MUDQGGB9EX;
@@ -536,6 +617,7 @@
 				E0A1AA7A1EE3C57C00DF2371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0A1AA7B1EE3C57C00DF2371 /* Build configuration list for PBXNativeTarget "travelscheduler-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +626,7 @@
 				E0A1AA7D1EE3C57C00DF2371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0A1AA7E1EE3C57C00DF2371 /* Build configuration list for PBXNativeTarget "travelscheduler-iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +635,7 @@
 				E0A1AA801EE3C57C00DF2371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
